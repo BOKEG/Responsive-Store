@@ -4,83 +4,116 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gracy fashion store</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="./dist/output.css">
 </head>
-<body>
+<body class="bg-orange-100">
   <!-- Header Section -->
-  <header>
-    <nav>
-      <img src="Images/Logo.png" class="logo" style="width: 100px; height: 80px; border-radius: 100%;" alt="no logo">
-      <p style="color: white;">Gracy fashion house</p>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#contact">Contact</a></li>
+  <header class="bg-gray-800 text-white">
+    <nav class="container mx-auto flex items-center justify-between py-3 px-4">
+      <!-- Logo Section -->
+      <div class="flex items-center">
+        <img src="Images/Logo.png" alt="Gracy fashion house logo" class="w-20 h-20 rounded-full mr-4">
+        <p class="text-lg font-bold">Gracy Fashion House</p>
+      </div>
+      
+      <!-- Navigation Links -->
+      <ul class="flex space-x-6">
+        <li><a href="#home" class="hover:text-gray-400 transition">Home</a></li>
+        <li><a href="#products" class="hover:text-gray-400 transition">Products</a></li>
+        <li><a href="#contact" class="hover:text-gray-400 transition">Contact</a></li>
       </ul>
     </nav>
   </header>
-
-  <section class="container py-5">
-    <div class="slide">
-      <p>Fashion always wins it all</p>
+  
+  <section class="container mx-auto py-10 px-4">
+    <div class="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden">
+      <!-- Image -->
+      <img src="Images/bout.jpg" alt="Fashion always wins" class="w-full h-60 object-cover">
+      
+      <!-- Overlay Text -->
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <p class="text-white text-lg font-bold text-center">Fashion Always Wins It All</p>
+      </div>
     </div>
   </section>
+  
 
-  <!-- Product Section -->
-<section id="products" class="container py-5">
-    <h2 class="text-center mb-4">Our Products</h2>
-    <div class="row">
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
-          <img src="Images/suit.jpg" class="card-img-top" alt="Product 1">
-          <div class="card-body">
-            <h5 class="card-title">Men's wear</h5>
-            <p class="card-text">suits with material that lasts longer to 10 years</p>
-            <a href="#" class="btn btn-primary">Shop Now</a>
-          </div>
+ 
+
+  <section id="products" class="container mx-auto py-10 px-4">
+    <h2 class="text-center text-3xl font-bold mb-8">Our Products</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Product Cards-->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="Images/suit.jpg" alt="Men's wear" class="w-full">
+        <div class="p-4">
+          <h5 class="text-lg font-semibold">Men's Wear</h5>
+          <p class="text-gray-600 text-sm mb-4">Suits with material that lasts longer to 10 years.</p>
+          <a href="#" class="block text-center bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition">
+            Shop Now
+          </a>
+        </div>
+      </div>
+  
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="Images/flora.jpg" alt="Ladies wear" class="w-full">
+        <div class="p-4">
+          <h5 class="text-lg font-semibold">Ladies Wear</h5>
+          <p class="text-gray-600 text-sm mb-4">Floral classy dresses with good quality available in all colors.</p>
+          <a href="#" class="block text-center bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition">
+            Shop Now
+          </a>
+        </div>
+      </div>
+  
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="Images/girl.jpg" alt="Girl Fancy cloth" class="">
+        <div class="p-4">
+          <h5 class="text-lg font-semibold">Girl Fancy Cloth</h5>
+          <p class="text-gray-600 text-sm mb-4">Comes with a smooth touch and design in two-in-one piece.</p>
+          <a href="#" class="block text-center bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition">
+            Shop Now
+          </a>
         </div>
       </div>
 
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
-          <img src="Images/flora.jpg" class="card-img-top" alt="Product 1">
-          <div class="card-body">
-            <h5 class="card-title">Ladies wear</h5>
-            <p class="card-text">flora classy dresses with good quality available in all colors</p>
-            <a href="#" class="btn btn-primary">Shop Now</a>
-          </div>
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="Images/cind.jpg" alt="Kid's Wear" class="w-full">
+        <div class="p-4">
+          <h5 class="text-lg font-semibold">Kid's Wear</h5>
+          <p class="text-gray-600 text-sm mb-4">A customized cloth for events.</p>
+          <a href="#" class="block text-center bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition">
+            Shop Now
+          </a>
         </div>
       </div>
+    </div>
+  </section>
+  
 
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
-          <img src="Images/girl.jpg" class="card-img-top" alt="Product 1">
-          <div class="card-body">
-            <h5 class="card-title">Girl Fancy cloth</h5>
-            <p class="card-text">comes with a smooth touch and design in two in one piece</p>
-            <a href="#" class="btn btn-primary">Shop Now</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
-          <img src="Images/cind.jpg" class="card-img-top" alt="Product 1">
-          <div class="card-body">
-            <h5 class="card-title">Kid's Wear</h5>
-            <p class="card-text">a customized cloth for events</p>
-            <a href="#" class="btn btn-primary">Shop Now</a>
-          </div>
-        </div>
-      </div>
+<section class="py-12 bg-gray-100">
+    <div class="container mx-auto bg-gray-500 text-white rounded-lg shadow-lg p-8">
+      <h2 class="text-2xl font-bold mb-4">About Us</h2>
+      <p class="text-base leading-relaxed">
+        Welcome to Gracy Fashion House! We are committed to providing stylish and durable clothing for every occasion. Our designs are crafted with passion and attention to detail, ensuring you always look your best.
+      </p>
     </div>
 </section>
   
-  <!-- Footer Section -->
-  <footer>
-    <p>&copy; 2024 Gracy fashion house. All rights reserved.</p>
-  </footer>
+  
+<footer class="bg-gray-800 text-white py-8">
+  <div class="container mx-auto text-center">
+    <h3 class="text-lg font-bold mb-4">Gracy Fashion House</h3>
+    <ul class="flex justify-center space-x-6 mb-4">
+      <li><a href="#home" class="hover:text-gray-400 transition">Home</a></li>
+      <li><a href="#products" class="hover:text-gray-400 transition">Products</a></li>
+      <li><a href="#contact" class="hover:text-gray-400 transition">Contact</a></li>
+    </ul>
+    <p class="text-sm md:text-base">&copy; 2024 Gracy Fashion House. All rights reserved.</p>
+  </div>
+</footer>
+
+ 
 </body>
 </html>
